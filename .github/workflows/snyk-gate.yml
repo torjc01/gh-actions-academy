@@ -1,6 +1,6 @@
 name: Snyk Security Gate
 on:
-  pull-request:
+  pull_request:
     branches:
       PROD
 jobs:
