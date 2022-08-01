@@ -5,12 +5,12 @@ on:
       PROD
 jobs:
   oss-security:
-  runs-on: ubuntu-latest
-  steps:
-  - uses: actionscheckout@master
-  - name: Check for high severity oss vulnerabilities
-    uses: snyk/actions/node@master
-    env:
-      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-    with:
-      args: --severity-threshold=high --fail-on=upgradable 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actionscheckout@master
+    - name: Check for high severity oss vulnerabilities
+      uses: snyk/actions/node@master
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+        args: --severity-threshold=high --fail-on=upgradable
