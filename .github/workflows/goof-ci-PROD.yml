@@ -43,6 +43,6 @@ jobs:
           image: goof:develop
           args: --file=Dockerfile
       - name: Upload container scan results to github cide scanning
-        uses: github/codeql-action/upload-sarif@1
+        uses: github/codeql-action/upload-sarif@v1
         with: 
           sarif_file: snyk.sarif
