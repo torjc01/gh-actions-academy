@@ -1,1 +1,4 @@
 config
+DB_NAME=gh-goofy-db
+DB_USER=goofyboofy
+DB_PASS=adkjefih3s6d54w4tsdf569
