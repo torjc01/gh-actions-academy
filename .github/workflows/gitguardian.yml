@@ -1,6 +1,11 @@
 name: GitGuardian scan
 
-on: [push, pull_request]
+# on: [push, pull_request]
+on:
+  push:
+    branches: [ origin/oss-actions, develop, PROD ]
+  pull_request:
+    branches: [ develop, PROD ]
 
 jobs:
   scanning:
