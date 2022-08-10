@@ -1,4 +1,4 @@
 config
-DB_NAME=gh-goofy-db
-DB_USER=goofyboofy
-DB_PASSWORD=adkjefih3s6d54w4tsdf569
+MYSQL_HOST=gh-goofy-db
+MYSQL_USERNAME=goofyboofy
+MYSQL_PASSWORD=adkjefih3s6d54w4tsdf569
